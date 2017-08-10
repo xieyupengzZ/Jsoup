@@ -79,7 +79,7 @@ private static String urlBase = "http://www.hiyd.com/dongzuo/?page=%";
 	public static void putExcel(List<String[]> exerciseList)
 			throws WriteException, IOException {
 
-		String parentPath = "/Excel"; // 此处可以通过参数调用传入
+		String parentPath = "/Excel"; // 此处可以通过参数调用传入，在workspace同级目录下
 		File file = new File(parentPath + "/exercise.xls");
 		if (!file.getParentFile().exists()) { // 判断父路径（parentPath/file.getParentFile）是否存在
 			System.out.println(file.getParentFile());
